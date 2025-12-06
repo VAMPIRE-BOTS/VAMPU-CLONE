@@ -62,3 +62,5 @@ yt-dlp
 youtube-search
 youtube-search-python
 flask
+py-yt-search==1.0.4
+youtubesearchpython==1.6.6
