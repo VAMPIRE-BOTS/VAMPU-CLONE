@@ -83,8 +83,8 @@ async def get_thumb(videoid):
         bold_font = ImageFont.truetype("VILLAIN/assets/font.ttf", 33)
 
     
-        text_size = draw.textsize("Kanha   ", font=font)
-        draw.text((1280 - text_size[0] - 10, 10), "Kanha   ", fill="yellow", font=font)
+        text_size = draw.textsize("HEARTBEAT", font=font)
+        draw.text((1280 - text_size[0] - 10, 10), "  ", fill="yellow", font=font)
 
     
         draw.text(
