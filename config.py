@@ -18,8 +18,8 @@ ASSUSERNAME = getenv("ASSUSERNAME", "")
 
 MONGO_DB_URI = getenv("MONGO_DB_URI")
 
-API_URL = "https://yt.beatsapi.xyz/api/yt"
-VIDEO_API_URL = "https://yt.beatsapi.xyz/api/yt"
+API_URL = "https://api-dl-1.gleeze.com/yt"
+VIDEO_API_URL = "https://api-dl-1.gleeze.com/yt"
 API_KEY = getenv("API_KEY", "xbit_PS4ZA54AU61985SONTXDDL")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
