@@ -16,7 +16,7 @@ FALLBACK_API_URL = "https://shrutibots.site"
 
 async def load_api_url():
     global YOUR_API_URL
-    logger = LOGGER("ShrutiMusic.platforms.Youtube.py")
+    logger = LOGGER("VILLAIN.platforms.Youtube.py")
     
     try:
         async with aiohttp.ClientSession() as session:
