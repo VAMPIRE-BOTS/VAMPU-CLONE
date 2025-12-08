@@ -16,9 +16,9 @@ from urllib3.util.retry import Retry
 from youtubesearchpython.__future__ import CustomSearch
 from py_yt import VideosSearch
 import base64
-from SONALI import LOGGER
-from SONALI.utils.database import is_on_off
-from SONALI.utils.formatters import time_to_seconds
+from VILLAIN import LOGGER
+from VILLAIN.utils.database import is_on_off
+from VILLAIN.utils.formatters import time_to_seconds
 from config import YT_API_KEY, YTPROXY_URL as YTPROXY
 
 logger = LOGGER(__name__)
