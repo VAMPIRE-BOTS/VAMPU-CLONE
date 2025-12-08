@@ -18,6 +18,11 @@ ASSUSERNAME = getenv("ASSUSERNAME", "")
 
 MONGO_DB_URI = getenv("MONGO_DB_URI")
 
+YTPROXY_URL = ""
+
+YT_API_KEY = ""
+
+
 API_URL = "https://api-dl-1.gleeze.com/yt"
 VIDEO_API_URL = "https://api-dl-1.gleeze.com/yt"
 API_KEY = getenv("API_KEY", "xbit_PS4ZA54AU61985SONTXDDL")
