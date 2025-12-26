@@ -4,7 +4,7 @@ import asyncio
 from pyrogram import filters, Client
 from pyrogram.enums import ChatType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery, InputMediaPhoto
-from youtubesearchpython.__future__ import VideosSearch
+from py_yt import VideosSearch
 from VILLAIN import app
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
