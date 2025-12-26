@@ -802,7 +802,7 @@ from VILLAIN.utils.inline import (
 )
 from VILLAIN.utils.pastebin import PROBin
 from VILLAIN.utils.stream.queue import put_queue, put_queue_index
-from youtubesearchpython.__future__ import VideosSearch
+from py_yt import VideosSearch
 from VILLAIN.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel
 
 
