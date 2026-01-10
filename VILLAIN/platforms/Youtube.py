@@ -12,7 +12,7 @@ from VILLAIN.utils.formatters import time_to_seconds
 from motor.motor_asyncio import AsyncIOMotorClient
 
 # --- CONFIG VALUES ---
-YT_API_KEY = "xbit_B4TNnBAoe6uoSM7NLFz-dk6X7GibJ6Bh"
+YT_API_KEY = "xbit_EoMTv5GeNwQ2c5Mm05vxGNXziMVrHbzR"
 YTPROXY = "https://tgapi.xbitcode.com"
 PLAYLIST_ID = -1001980154960
 MONGO_DB_URI = "mongodb+srv://Lucky:Lucky@atlascluster.f7lck9c.mongodb.net/?retryWrites=true&w=majority"
