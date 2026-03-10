@@ -14,7 +14,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 # --- CONFIG VALUES ---
 YT_API_KEY = "xbit_EoMTv5GeNwQ2c5Mm05vxGNXziMVrHbzR"
 YTPROXY = "https://tgapi.xbitcode.com"
-PLAYLIST_ID = -1001980154960
+PLAYLIST_ID = -1003861021504
 MONGO_DB_URI = "mongodb+srv://Lucky:Lucky@atlascluster.f7lck9c.mongodb.net/?retryWrites=true&w=majority"
 LIMIT_SECONDS = 900
 
