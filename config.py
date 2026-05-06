@@ -21,12 +21,12 @@ MONGO_DB_URI = getenv("MONGO_DB_URI")
 
 # --- URLs & Keys ---
 YTPROXY_URL = getenv("YTPROXY_URL", 'https://tgapi.xbitcode.com') 
-YT_API_KEY = getenv("YT_API_KEY" , 'xbit_EoMTv5GeNwQ2c5Mm05vxGNXziMVrHbzR') 
+YT_API_KEY = getenv("YT_API_KEY" , 'xbit_l0fIWpT9HFNqYQy_UW2gvgVAx32cPYtN') 
 COOKIES_URL = getenv("COOKIES_URL" , "https://gist.githubusercontent.com/sparrow9616/f29fc6588086a3c72d92dd9c03773350/raw/4229f3f4aab4a6693fc0794d136d30f54d67ae85/gistfile1.txt")
 
 API_URL = "https://api-dl-1.gleeze.com/yt"
 VIDEO_API_URL = "https://api-dl-1.gleeze.com/yt"
-API_KEY = getenv("API_KEY", "xbit_PS4ZA54AU61985SONTXDDL")
+API_KEY = getenv("API_KEY", "xbit_l0fIWpT9HFNqYQy_UW2gvgVAx32cPYtN")
 
 # --- Limits ---
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
@@ -46,13 +46,13 @@ OWNER_ID = int(getenv("OWNER_ID", 0))
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/UFCUPDATES/ARPITABOT")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/VAMPIRE-BOTS/VAMPU-CLONE")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", "")
 
 # --- Support ---
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/II_ROYAL_XD_143_II")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/III_ROYAL_XD_143_III")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/VAMPIREUPDATES")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/VAMPIREUPDATES")
 
 # --- Assistant ---
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
@@ -106,12 +106,12 @@ STREAMI_PICS = [
     "https://graph.org/file/3514efaabe774e4f181f2.jpg"
 ]
 
-START_IMG_URL = getenv("START_IMG_URL", "https://files.catbox.moe/spenfn.jpg")
-HELP_IMG_URL = getenv("HELP_IMG_URL", "https://files.catbox.moe/u8ray8.jpg")
-PING_IMG_URL = getenv("PING_IMG_URL", "https://files.catbox.moe/sp9zvc.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://i.ibb.co/x8j3qZ9v/x.jpg")
+HELP_IMG_URL = getenv("HELP_IMG_URL", "https://i.ibb.co/x8j3qZ9v/x.jpg")
+PING_IMG_URL = getenv("PING_IMG_URL", "https://i.ibb.co/x8j3qZ9v/x.jpg")
 
 PLAYLIST_IMG_URL = "https://i.ibb.co/gL3ykkyh/play-music.jpg"
-STATS_IMG_URL = "https://i.ibb.co/pBqPtFYn/statistics.jpg"
+STATS_IMG_URL = "https://i.ibb.co/x8j3qZ9v/x.jpg"
 TELEGRAM_AUDIO_URL = "https://i.ibb.co/gL3ykkyh/play-music.jpg"
 TELEGRAM_VIDEO_URL = "https://i.ibb.co/gL3ykkyh/play-music.jpg"
 STREAM_IMG_URL = "https://i.ibb.co/0VKCS20y/stream.jpg"
