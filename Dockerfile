@@ -1,20 +1,17 @@
-FROM python:3.9-slim-buster
+FROM nikolaik/python-nodejs:python3.11-nodejs19
 
-# Install uv
-COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+RUN rm -f /etc/apt/sources.list.d/yarn.list && \
+    sed -i 's|http://deb.debian.org/debian|http://archive.debian.org/debian|g' /etc/apt/sources.list && \
+    sed -i '/security.debian.org/d' /etc/apt/sources.list && \
+    apt-get update && \
+    apt-get install -y --no-install-recommends ffmpeg aria2 && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 COPY . /app/
 WORKDIR /app/
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends curl ca-certificates bash ffmpeg git zip build-essential python3-dev libssl-dev libffi-dev pkg-config \
-    && uv sync --frozen --no-install-project \
-    && apt-get remove -y --purge build-essential python3-dev libssl-dev libffi-dev pkg-config \
-    && apt-get autoremove -y \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+RUN python -m pip install --no-cache-dir --upgrade pip
+RUN pip3 install --no-cache-dir --upgrade -r requirements.txt
 
-# Add .venv/bin to PATH
-ENV PATH="/app/.venv/bin:$PATH"
-
-CMD ["bash", "start"]
+CMD bash start
