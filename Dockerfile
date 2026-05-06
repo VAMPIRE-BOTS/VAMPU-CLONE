@@ -1,16 +1,20 @@
-FROM nikolaik/python-nodejs:python3.10-nodejs19
+\FROM python:3.13-slim
 
-RUN sed -i 's|http://deb.debian.org/debian|http://archive.debian.org/debian|g' /etc/apt/sources.list && \
-    sed -i '/security.debian.org/d' /etc/apt/sources.list && \
-    apt-get update && \
-    apt-get install -y --no-install-recommends ffmpeg aria2 && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+# Install uv
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
 COPY . /app/
 WORKDIR /app/
 
-RUN python -m pip install --no-cache-dir --upgrade pip
-RUN pip3 install --no-cache-dir --upgrade --requirement requirements.txt
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends curl ca-certificates bash ffmpeg git zip build-essential python3-dev libssl-dev libffi-dev pkg-config \
+    && uv sync --frozen --no-install-project \
+    && apt-get remove -y --purge build-essential python3-dev libssl-dev libffi-dev pkg-config \
+    && apt-get autoremove -y \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
-CMD bash start
+# Add .venv/bin to PATH
+ENV PATH="/app/.venv/bin:$PATH"
+
+CMD ["bash", "start"]
