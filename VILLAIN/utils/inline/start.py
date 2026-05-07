@@ -106,7 +106,7 @@ async def show_bot_info(c: app, q: CallbackQuery):
 🧾ᴀᴘɪ sᴛᴀᴛᴜs
 
 ᴅʙ : ᴏɴʟɪɴᴇ
-ʀɪsʜᴜ ᴀᴘɪ : ʀᴇsᴘᴏɴsɪᴠᴇ
+ᴠᴀᴍᴘɪʀᴇ ᴀᴘɪ : ʀᴇsᴘᴏɴsɪᴠᴇ
 ᴀᴘɪ ᴘɪɴɢ : {delta_ping:.2f} ms
 ᴀᴘɪ ᴜᴘᴛɪᴍᴇ : {get_uptime()}
 
