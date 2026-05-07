@@ -28,7 +28,7 @@ from config import SUPPORT_CHAT, OWNER_ID
 from datetime import datetime
 CLONES = set()
 
-C_BOT_DESC = "Wᴀɴᴛ ᴀ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs? Cʟᴏɴᴇ ɪᴛ ɴᴏᴡ! ✅\n\nVɪsɪᴛ: @Guddaclonebot ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!\n\n - Uᴘᴅᴀᴛᴇ: @VAMPIREUPDATES\n - Sᴜᴘᴘᴏʀᴛ: @VAMPIREUPDATES"
+C_BOT_DESC = "Wᴀɴᴛ ᴀ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs? Cʟᴏɴᴇ ɪᴛ ɴᴏᴡ! ✅\n\nVɪsɪᴛ: @Guddaclonebot ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!\n\n - Uᴘᴅᴀᴛᴇ: @VAMPIREUPDATES\n - Sᴜᴘᴘᴏʀᴛ: @TOXIC_PARTY_OFFICIAL"
 
 C_BOT_COMMANDS = [
                 {"command": "/start", "description": "sᴛᴀʀᴛs ᴛʜᴇ ᴍᴜsɪᴄ ʙᴏᴛ"},
@@ -103,7 +103,7 @@ async def clone_txt(client, message, _):
                 "token": bot_token,
                 "username": bot.username,
                 "channel": "VAMPIREUPDATES",
-                "support": "VAMPIREUPDATES",
+                "support": "TOXIC_PARTY_OFFICIAL",
                 "premium" : True,
                 "Date" : False,
             }
